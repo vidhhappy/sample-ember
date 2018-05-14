@@ -1,6 +1,0 @@
-{
-  "name": "sample-application",
-  "dependencies": {
-    "fusioncharts": "^3.12.2"
-  }
-}
