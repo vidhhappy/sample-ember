@@ -1,0 +1,298 @@
+<h1>Research</h1>
+<div class="row">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-10 mt-2">
+
+    <div class="row">
+      <div class="col-sm-3">
+        {{#bs-modal-simple open=modal1 title="Integrative cancer genomics" size="lg" onHidden=(action (mut modal1) false)}}
+          <div>
+            <h2>Integrative cancer genomics</h2>
+             <img src= "/assets/images/research/research3.png" style="width:700px;"   class="card-img-top" alt="Integrative cancer genomics">
+            <p> We are interested in developing integrated clinical, experimental, and computational approaches to solve important
+              challenges in medical genomics, especially cancer treatment. The advent of affordable high-throughput sequencing
+              and molecular technologies are now allowing us to study cancer genomics and biology directly in large cohorts
+              of patient tumors. As a former member of the Sander group at Memorial Sloan-Kettering Cancer Center, we have
+              experience from participation in several tumor characterization projects in The Cancer Genome Atlas (TCGA).
+              Here we have contributed data analysis and tools for management and analysis of the massive cancer genomics
+              datasets (see CGDSR, Cerami 2012, Gao 2013). Additionally, we have collaborated with multiple clinical cancer
+              research groups on integrative analysis to address relevant clinical questions (Hakimi 2013, Li 2013, Barlin
+              2015, Hakimi 2015). We plan to engage in new cancer genomics collaborations with excellent experimental and
+              clinical groups at GIS and in Singapore.</p>
+          </div>
+        {{/bs-modal-simple}}
+
+        {{#bs-modal-simple open=modal2 title="Non-coding mutations in cancer" size="lg" onHidden=(action (mut modal2) false)}}
+          <div>
+            <h2>Non-coding mutations in cancer</h2>
+             <img src= "/assets/images/research/research2.png" style="width:700px;"    class="card-img-top" alt="Non-coding mutations">
+            <p> Cancer primarily develops because of somatic alterations in the genome. However, the non-protein-coding genome,
+              comprising more than 98% of the human genome, remains mostly uncharted in cancer genomics. We have previously
+              analyzed complete genome sequences of 863 human tumors from The Cancer Genome Atlas and other sources to systematically
+              identify noncoding regions that are frequently mutated in cancer (Weinhold & Jacobsen, et al. (2014)). We are
+              further developing and applying new frequency- and sequence-based approaches to comprehensively scan cancer
+              genome for noncoding mutations with potential regulatory impact (e.g. Hu et al. 2017 and Guo et al. 2018).</p>
+          </div>
+        {{/bs-modal-simple}}
+        {{#bs-modal-simple open=modal3 title="Discovery of miRNA-target interactions in cancer" size="lg" onHidden=(action (mut modal3)
+          false)}}
+          <div>
+            <h2>Discovery of miRNA-target interactions in cancer</h2>
+              <img src= "/assets/images/research/research3.png" style="width:700px;"  class="card-img-top" alt="miRNA-target interactions">
+            <p> MicroRNAs (miRNAs) are small non-coding RNAs that regulate gene expression and protein levels by binding to mRNAs.
+              Numerous studies have linked aberrant miRNA expression with regulation of diverse cancer processes. However,
+              we are still far from a complete understanding of the role of individual miRNAs in patient tumors. Together
+              with experimental labs, we have previously analyzed the biology and function of miRNAs in cancer cell lines
+              (see e.g. Frankel 2007, Gregersen 2010, Kheir 2011, Ugras 2011, Gregersen 2012, Crone 2012). More recently,
+              we have used tumor expression data and integrative cancer genomics to infer targets of miRNAs directly in patient
+              tumors (see Silber 2012, Creighton 2012, Jacobsen 2013). For example, using molecular profiles of >3,000 tumors
+              from 11 human cancer types in The Cancer Genome Atlas, we systematically analyzed expression of miRNAs and
+              mRNAs across cancer types to infer cancer-associated miRNA-target relationships (Jacobsen 2013). We plan to
+              refine this approach and apply it to new cancer types. Similarly, we are intersted in studying the function
+              and cancer relevance of other classes of non-coding RNAs.</p>
+          </div>
+        {{/bs-modal-simple}}
+
+
+        <div class="card">
+          {{#bs-button onClick=(action (mut modal1)true)}}
+           
+            <img src= "/assets/images/research/research1.png" style="width:200px;height:200px;"  class="card-img-top" alt="Integrative cancer genomics">
+
+            <div class="card-block">
+              <p class="card-text">
+              <h6>Integrative cancer genomics</h6></p>
+              <a href="#" class="btn btn-primary">More Info</a>
+            </div>
+          {{/bs-button}}
+        </div>
+
+        <div class="card">
+          {{#bs-button onClick=(action (mut modal2)true)}}
+           
+            <img src="/assets/images/research/research2.png" style="width:200px;height:200px;" class="card-img-top" alt="Non-coding mutations">
+
+            <div class="card-block">
+              <p class="card-text">
+              <h6>Non-coding mutations</h6></p>
+              <a href="#" class="btn btn-primary">More Info</a>
+            </div>
+          {{/bs-button}}
+        </div>
+
+        <div class="card">
+          {{#bs-button onClick=(action (mut modal3)true)}}
+            
+            <img src="/assets/images/research/research3.png" style="width:200px;height:200px;" class="card-img-top" alt="miRNA-target interactions">
+
+            <div class="card-block">
+              <p class="card-text">
+              miRNA-target interactions</p>
+              <a href="#" class="btn btn-primary">More Info</a>
+            </div>
+          {{/bs-button}}
+        </div>
+     
+
+      </div>
+      <div class="col">
+        <h2> Computational Cancer Genomics</h2>
+        <p> We are a computational biology group at Genome Institute of Singapore (GIS). We are particularly interested in developing
+          and applying relevant computational and statistical approaches to solve emerging problems in cancer research. To
+          accomplish this we work closely with excellent clinical research groups in Singapore and abroad.
+        </p>
+        <h2>Non-coding Cancer Genome</h2>
+        <p>Non-protein-coding regulatory elements and transcripts take up a large fraction of the human genome, but their function
+          and disease relevance are not well understood. We use computational approaches to identify and characterize cancer-causing
+          non-coding elements from large cohorts of tumor genomes and molecular profiles.
+        </p>
+        <h2>Tumor Systems Biology</h2>
+        <p>Signaling between cancer and non-malignant cells of the tumor microenvironment is critical in many aspects of tumor
+          progression. However, there is a lack of approaches to study this phenomenon at scale in tumors. We are developing
+          integrated experimental and computational techniques to study tumors at a systems level.
+        </p>
+      </div>
+    </div>
+    <div class="col">
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--h1 align="center">Customer Segments</h1>
+<p fontWeight="bold" fontSize="22" fontFamily="Gnuolane Ultralight" color="#A61515"> Instructions </p>
+<p >
+  Pernod Ricard has commissioned a segmentation study to better understand the consumer landscape in Russia. </p>
+<p fontFamily="calibri"
+  fontSize="16">
+  The study identified
+  <span fontWeight="bold">5</span> segments: </p>
+<ol>
+  <li>
+    <p >Young Trendies</p>
+  </li>
+  <li>
+    <p >Hedonists</p>
+  </li>
+  <li>
+    <p >No-No</p>
+  </li>
+  <li>
+    <p >Respectable Family Men</p>
+  </li>
+  <li>
+    <p >Followers </p>
+  </li>
+</ol>
+<p >A thumbnail sketch of each of these segments is provided on your right. To get more detailed information about each segment,
+  please click on the bar on top of each segment description, with the name of that segment. You need to decide which of
+  the segment(s) you plan to target with your advertising.
+</p>
+<p>
+  Once you have decided on which segment(s) to target, please click on the selection box below each segment thumbnail. You
+  will be asked to verify this choice as it cannot be undone. Once you verify the decision, it will be saved in the “My Decisions”
+  panel on the far right hand side, under “Selected Audience” so that you can refer to the selected segment information easily.
+</p>
+
+
+<ol>
+  <li>
+    I don’t overpay for prestigious brands
+  </li>
+  <li>
+    I am very loyal to brands I like
+  </li>
+  <li>
+    When I drink alcohol I prefer well-known brands
+  </li>
+  <li>
+    In general I have classical habits and tastes
+  </li>
+  <li>
+
+    Finally, the simplest things are the best
+  </li>
+  <li>
+    Family is where I feel the best
+  </li>
+  <li>
+    I prefer traditional spirits which have a history
+  </li>
+  <li>
+    I am someone who likes changes, I hate routine
+  </li>
+  <li>
+    Alcohol is ideal to have a relaxing break </li>
+
+</ol>
+
+
+<ol>
+  <li>
+    To drink helps me to feel less shy
+  </li>
+  <li>
+    To have fun in a party, alcohol is essential
+  </li>
+  <li>
+    I often go out in trendy places
+  </li>
+  <li>
+    I like big noisy parties
+  </li>
+
+</ol>
+
+
+
+
+
+<ol>
+  <li>
+    Brands help me to to express my individuality
+  </li>
+  <li>
+    I am very loyal to brands I like
+  </li>
+  <li>
+    I often buy best brands even though they are expensive
+  </li>
+  <li>
+    I pay a particular attention to my appearance, my image
+  </li>
+  <li>
+
+    Strong alcohol is for true men </li>
+  <li>
+    I like various drinks depending on the place and occasions </li>
+  <li>
+    I take a real pleasure drinking alcohol
+  </li>
+  <li>
+    I think I am a connoisseur of alcoholic drinks </li>
+  <li>
+    Delicious food is an important part of my life
+  </li>
+  <li>
+    I love things that are of highest quality, prestigious and chic
+  </li>
+
+</ol>
+
+
+<ol>
+  <li>
+    Do not care about Brands. They drink less expensive drinks.
+  </li>
+
+</ol>
+
+<p>Young trendies represent 17% of consumers, but do only 15% of acts of consumption. It is most “younger” segment in terms
+  of age, but this segment has the highest income level. Young trendies consume more tequila, than another segment
+</p>
+
+<p>No-No’s represent 24% of consumers and do 24% of acts of consumption. They consume more vodka than another segments.</p>
+
+<p>Hedonists represent 19% of consumers and do 19% of acts of consumption. This segment has the highest education level and
+  have more peoples age 35-49 and more people, who live in Moscow and St. Petersburg than another segments and consume more
+  cognac than another segment.</p>
+
+<p>Respectable family men represent 18% of consumers and do 20% of acts of consumption. It is most “older” segment in terms
+  of age. This segment has very high percentage of Moscow citizens.</p>
+
+<p>Followers represent 22% of consumers and do 23% of acts of consumption. This segment has very high percentage of St. Petersburg
+  citizens and consumes more whisky than other segments.</p-->

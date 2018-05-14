@@ -7,6 +7,11 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('charts', function() {
+    this.route('linechart');
+  });
+  this.route('cancer-types');
+  this.route('overview');
 });
 
 export default Router;

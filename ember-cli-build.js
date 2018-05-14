@@ -5,20 +5,39 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
+    /*----------------------------------------------------------------
+    Ember Bootstrap
+    ----------------------------------------------------------------*/
+    'ember-bootstrap': {
+      'bootstrapVersion': 4,
+      'importBootstrapFont': false,
+      'importBootstrapCSS': false
+    },
+    /*----------------------------------------------------------------
+    Ember CLI Babel
+    ----------------------------------------------------------------*/
+    'ember-cli-babel': {
+      optional: [ 'es6.spec.symbols' ],
+      includePolyfill: true
+    },
+
+
+    /*----------------------------------------------------------------
+    Eslint
+    see https://medium.com/@ynotdraw/setup-your-ember-app-with-eslint-quickly-2d7e8a632c88
+    ----------------------------------------------------------------*/
+    eslint: {
+      testGenerator: 'qunit',
+      group: true,
+      rulesDir: 'eslint-rules',
+      extensions: ['js'],
+    },  
   });
 
-  // Use `app.import` to add additional libraries to the generated
-  // output files.
-  //
-  // If you need to use different assets in different
-  // environments, specify an object as the first parameter. That
-  // object's keys should be the environment name and the values
-  // should be the asset to use in that environment.
-  //
-  // If the library that you are including contains AMD or ES6
-  // modules that you would like to import into your application
-  // please specify an object with the list of modules as keys
-  // along with the exports of each module as its value.
+  
+  app.import("node_modules/fusioncharts/fusioncharts.js");  
+  app.import("node_modules/fusioncharts/fusioncharts.charts.js");  
+  app.import("node_modules/fusioncharts/themes/fusioncharts.theme.zune.js");
 
   return app.toTree();
 };
